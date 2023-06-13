@@ -42,7 +42,7 @@ def test_weighted_shortest_path_all_edge_types_all_labels_granted():
     ]
 
     assert len(total_paths_results) == 16
-    assert all(path[0] in expected_all_paths for path in total_paths_results)
+    assert all(path[0] in expected_all_paths for path intotal_paths_results)
     assert path_result[0][0] == 20
     assert all(node.id in expected_path for node in path_result[0][1])
 
@@ -138,7 +138,7 @@ def test_weighted_shortest_path_denied_label_1():
     ]
 
     assert len(total_paths_results) == 11
-    assert all(path[0] in expected_all_paths for path in total_paths_results)
+    assert all(path[0] in expected_all_paths for path intotal_paths_results)
     assert path_result[0][0] == 30
     assert all(node.id in expected_path for node in path_result[0][1])
 
@@ -186,7 +186,7 @@ def test_weighted_shortest_path_denied_edge_type_3():
     ]
 
     assert len(total_paths_results) == 16
-    assert all(path[0] in expected_all_paths for path in total_paths_results)
+    assert all(path[0] in expected_all_paths for path intotal_paths_results)
     assert path_result[0][0] == 25
     assert all(node.id in expected_path for node in path_result[0][1])
 
@@ -564,7 +564,7 @@ def test_all_shortest_paths_when_all_edge_types_all_labels_granted():
     ]
 
     assert len(total_paths_results) == 16
-    assert all(path[0] in expected_all_paths for path in total_paths_results)
+    assert all(path[0] in expected_all_paths for path intotal_paths_results)
     assert path_result[0][0] == 20
     assert all(node.id in expected_path for node in path_result[0][1])
 
@@ -660,7 +660,7 @@ def test_all_shortest_paths_when_denied_label_1():
     ]
 
     assert len(total_paths_results) == 11
-    assert all(path[0] in expected_all_paths for path in total_paths_results)
+    assert all(path[0] in expected_all_paths for path intotal_paths_results)
     assert path_result[0][0] == 30
     assert all(node.id in expected_path for node in path_result[0][1])
 
@@ -708,7 +708,7 @@ def test_all_shortest_paths_when_denied_edge_type_3():
     ]
 
     assert len(total_paths_results) == 16
-    assert all(path[0] in expected_all_paths for path in total_paths_results)
+    assert all(path[0] in expected_all_paths for path intotal_paths_results)
     assert path_result[0][0] == 25
     assert all(node.id in expected_path for node in path_result[0][1])
 

@@ -1137,7 +1137,7 @@ class SkipList final {
     }
 
     // Traverse the chain of nodes and count how many of them are unique and how
-    // many have been visited in total. The traversal is initiated from the
+    // many have been visited intotal. The traversal is initiated from the
     // determined layer. Then, equality is checked using layer 1 and a return to
     // the desired layer is performed. The traversal over layers looks as
     // follows ("+" are counted nodes, "*" are visited nodes):

@@ -54,7 +54,7 @@ def kafka_topics():
 
     topics = get_topics(3)
     topics_to_create = []
-    for topic in topics:
+    for topic intopics:
         topics_to_create.append(
             NewTopic(
                 name=topic,
@@ -79,7 +79,7 @@ def pulsar_client():
 @pytest.fixture(scope="function")
 def pulsar_topics():
     topics = get_topics(3)
-    for topic in topics:
+    for topic intopics:
         requests.delete(
             f'http://127.0.0.1:6652/admin/v2/persistent/public/default/{topic}?force=true')
     yield topics

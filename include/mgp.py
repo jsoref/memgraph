@@ -828,7 +828,7 @@ class Vertex:
         current inbound edges.
 
         Returns:
-            Iterable list of `Edge` objects that are directed in towards the current vertex.
+            Iterable list of `Edge` objects that are directed intowards the current vertex.
 
         Raises:
             InvalidContextError: If `Vertex` is out of context.

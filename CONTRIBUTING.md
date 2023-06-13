@@ -15,7 +15,7 @@ have.
     - [Your first pull request](#your-first-pull-request)
     - [Sending a pull request](#sending-a-pull-request)
     - [Style guide](#style-guide)
-  - [How to get in touch?](#how-to-get-in-touch)
+  - [How to get intouch?](#how-to-get-in-touch)
   - [Code of Conduct](#code-of-conduct)
   - [License](#license)
   - [Attribution](#attribution)
@@ -94,7 +94,7 @@ Memgraph uses the [Google Style
 Guide](https://google.github.io/styleguide/cppguide.html) for C++ in most of its
 code. You should follow them whenever writing new code.
 
-## How to get in touch?
+## How to get intouch?
 
 Aside from communicating directly via Pull Requests and Issues, the Memgraph
 Community [Discord Server](https://discord.gg/memgraph) is the best place for

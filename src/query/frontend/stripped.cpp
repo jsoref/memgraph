@@ -104,7 +104,7 @@ StrippedQuery::StrippedQuery(const std::string &query) : original_(query) {
   };
 
   // Copy original tokens because we need to use original case in named
-  // expressions and keywords in tokens will be lowercased in the next loop.
+  // expressions and keywords intokens will be lowercased in the next loop.
   auto original_tokens = tokens;
   // For every token in original query remember token index in stripped query.
   std::vector<int> position_mapping(tokens.size(), -1);

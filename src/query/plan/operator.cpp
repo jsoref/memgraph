@@ -4570,7 +4570,7 @@ class CallProcedureCursor : public Cursor {
                                     graph_view);
 
       result_.signature = &proc->results;
-      // Use evaluation memory, as invoking a procedure is akin to a simple
+      // Use evaluation memory, as invoking a procedure is akinto a simple
       // evaluation of an expression.
       // TODO: This will probably need to be changed when we add support for
       // generator like procedures which yield a new result on each invocation.

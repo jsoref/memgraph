@@ -111,7 +111,7 @@ def test_show_replicas(connection):
     interactive_mg_runner.kill(MEMGRAPH_INSTANCES_DESCRIPTION, "replica_3")
     interactive_mg_runner.stop(MEMGRAPH_INSTANCES_DESCRIPTION, "replica_4")
 
-    # We leave some time for the main to realise the replicas are down.
+    # We leave some time for the mainto realise the replicas are down.
     def retrieve_data():
         return set(execute_and_fetch_all(cursor, "SHOW REPLICAS;"))
 
