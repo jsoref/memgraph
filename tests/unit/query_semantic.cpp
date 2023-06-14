@@ -1002,7 +1002,7 @@ TEST_F(TestSymbolGenerator, MatchUnionReturnSymbols) {
   EXPECT_EQ(symbol_table.max_position(), 8);
 }
 
-TEST_F(TestSymbolGenerator, MatchUnionParameterNameThrowSemanticExpcetion) {
+TEST_F(TestSymbolGenerator, MatchUnionParameterNameThrowSemanticException) {
   // WITH 1 as X, 2 AS Y RETURN * UNION RETURN 3 AS Z, 4 AS Y
   auto ret = storage.Create<Return>();
   ret->body_.all_identifiers = true;
@@ -1011,7 +1011,7 @@ TEST_F(TestSymbolGenerator, MatchUnionParameterNameThrowSemanticExpcetion) {
   EXPECT_THROW(memgraph::query::MakeSymbolTable(query), SemanticException);
 }
 
-TEST_F(TestSymbolGenerator, MatchUnionParameterNumberThrowSemanticExpcetion) {
+TEST_F(TestSymbolGenerator, MatchUnionParameterNumberThrowSemanticException) {
   // WITH 1 as X, 2 AS Y RETURN * UNION RETURN 4 AS Y
   auto ret = storage.Create<Return>();
   ret->body_.all_identifiers = true;
@@ -1151,7 +1151,7 @@ TEST_F(TestSymbolGenerator, PredefinedIdentifiers) {
   symbol_table = memgraph::query::MakeSymbolTable(query, {first_op});
   ASSERT_EQ(symbol_table.max_position(), 6);
 
-  // You cannot redaclare the predefined identifier in the same scope
+  // You cannot redeclare the predefined identifier in the same scope
   // UNWIND first_op as u CREATE(first_op {prop: u})
   auto unwind = UNWIND(first_op, AS("u"));
   auto node = NODE("first_op");

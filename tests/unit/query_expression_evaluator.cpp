@@ -389,7 +389,7 @@ TEST_F(ExpressionEvaluatorTest, MapProjectionIndexing) {
     EXPECT_EQ(value.ValueInt(), 1);
   }
   {
-    // Legal indexing; property created by PropertyLookup of a non-existent map variable key
+    // Legal indexing; property created by PropertyLookup of a nonexistent map variable key
     auto *op = storage.Create<SubscriptOperator>(map_projection_literal, storage.Create<PrimitiveLiteral>("y"));
     auto value = Eval(op);
     EXPECT_TRUE(value.IsNull());
@@ -1753,7 +1753,7 @@ TEST_F(FunctionTest, Abs) {
 
 // Test if log works. If it does then all functions wrapped with
 // WRAP_CMATH_FLOAT_FUNCTION macro should work and are not gonna be tested for
-// correctnes..
+// correctness..
 TEST_F(FunctionTest, Log) {
   ASSERT_THROW(EvaluateFunction("LOG"), QueryRuntimeException);
   ASSERT_TRUE(EvaluateFunction("LOG", TypedValue()).IsNull());
@@ -1781,7 +1781,7 @@ TEST_F(FunctionTest, Round) {
 }
 
 // Check if wrapped functions are callable (check if everything was spelled
-// correctly...). Wrapper correctnes is checked in FunctionTest.Log function
+// correctly...). Wrapper correctness is checked in FunctionTest.Log function
 // test.
 TEST_F(FunctionTest, WrappedMathFunctions) {
   for (auto function_name :
